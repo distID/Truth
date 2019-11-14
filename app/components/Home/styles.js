@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native'
 const dimensions = Dimensions.get('window');
-const imageHeight = dimensions.height/4.25;
-const imageWidth = dimensions.width/2.53125;
+const imageHeight = dimensions.height/4.25;    //imageHeight = 684.7
+const imageWidth = dimensions.width/2.53125;    //imageWidth = 411.6
 
 export default StyleSheet.create({
     parent: {
@@ -15,7 +15,7 @@ export default StyleSheet.create({
         flex: 1, 
         alignSelf: 'center',
         width: imageHeight,
-        height: imageHeight*1.3,
+        height: imageHeight,
     },
     logo: {
         height: imageHeight,
@@ -30,6 +30,7 @@ export default StyleSheet.create({
     tagline: {
         alignSelf: 'center',
         color: '#B0B0B0',
+        marginBottom: '-24%',
         fontSize: 14,
     }
 })

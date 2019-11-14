@@ -24,7 +24,7 @@ export default class La2017 extends React.Component {
         <LinearGradient 
           start={{x: 0, y: 0}} end={{x: 0, y: 1}}
           locations={[0.15, 1]}
-          colors={['#303030', '#101010']} 
+          colors={['#505050', '#101010']} 
           style={styles.linearGradient}>
           <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
             <Text style={{color: 'white', fontSize: 25, fontFamily: 'Montserrat-Bold'}}>2017</Text>
@@ -55,12 +55,12 @@ export default class La2017 extends React.Component {
             <Text style={{fontSize: 15, color: '#909090', fontFamily: 'Montserrat-Bold'}}>The Show Must Go On</Text>
           </View>
           <View style={{flex: 2, flexDirection: 'row'}}>
-            <TouchableOpacity style={{flex: 1}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=XGeMK-bwcbQ&t=607s')}}>
-              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold', marginTop: '2%'}}>Promo</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={{flex: 1}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=6enhjG3YOmk')}}>
-              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold', marginTop: '2%'}}>Tribute</Text>
-            </TouchableOpacity>
+            <View style={{flex: 1}}>
+              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold', marginTop: '2%'}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=XGeMK-bwcbQ&t=607s')}}>Promo</Text>
+            </View>
+            <View style={{flex: 1}}>
+              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold', marginTop: '2%'}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=6enhjG3YOmk')}}>Tribute</Text>
+            </View>
           </View>
         </LinearGradient>
       </View>

@@ -1,8 +1,8 @@
 import { StyleSheet, Dimensions } from 'react-native'
 const logo_color = '#38ffff';
 const dimensions = Dimensions.get('window');
-const imageHeight = dimensions.height;
-const imageWidth = dimensions.width;
+const imageHeight = dimensions.height;  //imageHeight = 684.7
+const imageWidth = dimensions.width;    //imageWidth = 411.6
 
 export default StyleSheet.create({
     parent: {
@@ -33,8 +33,8 @@ export default StyleSheet.create({
     triangleOne: {
         width: 0,
         height: 0,
-        marginLeft: -imageWidth/4.167,
-        marginTop: imageHeight/3.34,
+        marginLeft: -imageWidth/4.12,
+        marginTop: imageHeight/3.345,
         borderLeftWidth: imageWidth/5.88,
         borderRightWidth: imageWidth/13.72,
         borderBottomWidth: imageHeight/13.694, 
@@ -48,7 +48,7 @@ export default StyleSheet.create({
     triangleTwo: {
         width: 0,
         height: 0,
-        marginLeft: -imageWidth/5.747, 
+        marginLeft: -imageWidth/5.82, 
         marginTop: imageHeight/3.34, 
         borderLeftWidth: imageWidth/5.88,
         borderRightWidth: imageWidth/13.72,

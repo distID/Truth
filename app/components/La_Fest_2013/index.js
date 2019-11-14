@@ -24,7 +24,7 @@ export default class La2013 extends React.Component {
         <LinearGradient 
           start={{x: 0, y: 0}} end={{x: 0, y: 1}}
           locations={[0.1, 0.9]}
-          colors={['#101060', '#101010']} 
+          colors={['#101040', '#101010']} 
           style={styles.linearGradient}>
           <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
             <Text style={{color: 'white', fontSize: 25, fontFamily: 'Montserrat-Bold'}}>2013</Text>
@@ -39,12 +39,12 @@ export default class La2013 extends React.Component {
             <Text style={{fontSize: 15, color: '#909090', fontFamily: 'Montserrat-Bold'}}>Our Plot. Your Story.</Text>
           </View>
           <View style={{flex: 2, flexDirection: 'row'}}>
-            <TouchableOpacity style={{flex: 1}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=VxRxgMPTLrM')}}>
-              <Text style={{fontSize: 15, textAlign: 'center', color: '#FFFFFF', fontFamily: 'Montserrat-Bold', marginTop: '2%'}}>Promo</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={{flex: 1}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=lsX8cd3xS6c')}}>
-              <Text style={{fontSize: 15, textAlign: 'center', color: '#FFFFFF', fontFamily: 'Montserrat-Bold', marginTop: '2%'}}>LOSB</Text>
-            </TouchableOpacity>
+            <View style={{flex: 1}}>
+              <Text style={{fontSize: 15, textAlign: 'center', color: '#FFFFFF', fontFamily: 'Montserrat-Bold', marginTop: '2%'}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=VxRxgMPTLrM')}}>Promo</Text>
+            </View>
+            <View style={{flex: 1}}>
+              <Text style={{fontSize: 15, textAlign: 'center', color: '#FFFFFF', fontFamily: 'Montserrat-Bold', marginTop: '2%'}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=lsX8cd3xS6c')}}>LOSB</Text>
+            </View>
           </View>
         </LinearGradient>
       </View>
