@@ -22,12 +22,12 @@ export default class Home extends React.Component {
     return(
       <View style={styles.parent}>
         <LinearGradient 
-          start={{x: 1, y: 0}} end={{x: 0, y: 1}}
+          start={{x: 1, y: 0}} end={{x: 0.65, y: 0.35}}
           locations={[0.1, 0.6]}
-          colors={['#101038', '#101010']} 
+          colors={['#101060', '#101010']}
           style={styles.linearGradient}>
           <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
-            <Text style={{color: 'white', fontSize: 25, fontFamily: 'Montserrat-Bold'}}>La Fest</Text>
+            <Text style={{color: 'white', fontSize: 30, fontFamily: 'Montserrat-Bold'}}>La Fest</Text>
           </View>
           <View style={{flex: 2, flexDirection: 'row', marginTop: '-60%'}}>
             <TouchableOpacity style= {styles.logoView} onPress={() => {this.props.navigation.navigate('La_13')}}>

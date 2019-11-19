@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native'
-const logo_color = '#38ffff';
+const logo_color = '#30FFFF';
 const dimensions = Dimensions.get('window');
 const imageHeight = dimensions.height;  //imageHeight = 684.7
 const imageWidth = dimensions.width;    //imageWidth = 411.6
@@ -14,7 +14,7 @@ export default StyleSheet.create({
       },
     rectangle: {
         width: imageWidth/5.88, 
-        height: imageHeight/3.34, 
+        height: imageHeight/3.345, 
         backgroundColor: logo_color,
         marginLeft: imageWidth/12.473,
     },

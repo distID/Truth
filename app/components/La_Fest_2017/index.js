@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, Image, FlatList, Linking} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import Icon2 from 'react-native-vector-icons/MaterialIcons';
-import Icon3 from 'react-native-vector-icons/FontAwesome';
 import {setCustomText} from 'react-native-global-props';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
+import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
+import icoMoonConfig from './selection.json';
+const Icon = createIconSetFromIcoMoon(icoMoonConfig);
 const promo = 'https://www.youtube.com/watch?v=XGeMK-bwcbQ&t=607s';
 const laFest = 'https://www.youtube.com/watch?v=6enhjG3YOmk';
 
@@ -30,26 +30,7 @@ export default class La2017 extends React.Component {
             <Text style={{color: 'white', fontSize: 25, fontFamily: 'Montserrat-Bold'}}>2017</Text>
           </View>
           <View style={{flex: 3.5, flexDirection: 'row', alignSelf: 'center', position: 'relative'}}>
-            <View style={styles.triangleOnePartOne}/>
-            <View style={styles.triangleOnePartTwo}/>
-            <View style={styles.blockOneTriangle}/>
-            <View style={styles.blockOne}/>
-            <View style={styles.triangleTwoPartOne}/>
-            <View style={styles.triangleTwoPartTwo}/>
-            <View style={styles.triangleThree}/>
-            <View style={styles.blockTwoTriangleOne}/>
-            <View style={styles.blockTwo}/>
-            <View style={styles.blockTwoTriangleTwo}/>
-            <View style={styles.triangleFour}/>
-            <View style={styles.blockThreeTriangleOne}/>
-            <View style={styles.blockThree}/>
-            <View style={styles.blockThreeTriangleTwo}/>
-            <View style={styles.triangleFivePartOne}/>
-            <View style={styles.triangleFivePartTwo}/>
-            <View style={styles.blockFour}/>
-            <View style={styles.blockFourTriangle}/>
-            <View style={styles.triangleSixPartOne}/>
-            <View style={styles.triangleSixPartTwo}/>
+            <Icon name="La_2017" size={240} color="#000000"/>
           </View> 
           <View style={{flex: 1, alignSelf: 'center'}}>
             <Text style={{fontSize: 15, color: '#909090', fontFamily: 'Montserrat-Bold'}}>The Show Must Go On</Text>

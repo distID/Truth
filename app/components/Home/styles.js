@@ -12,7 +12,7 @@ export default StyleSheet.create({
         flex: 1,
       },
     logoView: {
-        flex: 1, 
+        flex: 8.5, 
         alignSelf: 'center',
         width: imageHeight,
         height: imageHeight,
@@ -22,12 +22,14 @@ export default StyleSheet.create({
         width: imageWidth,
     },
     year: {
+        flex: 1,
         alignSelf: 'center',
         color: '#F0F0F0',
         fontFamily: 'Montserrat-Bold',
         fontSize: 15,
     },
     tagline: {
+        flex: 1,
         alignSelf: 'center',
         color: '#B0B0B0',
         marginBottom: '-24%',
