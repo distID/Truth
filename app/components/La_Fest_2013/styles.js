@@ -11,7 +11,17 @@ export default StyleSheet.create({
     },
     linearGradient: {
         flex: 1,
-      },
+    },
+    link: {
+        flex: 1, 
+        justifyContent: 'center', 
+        borderColor: '#505050', 
+        borderRadius: 10, 
+        borderWidth: 3, 
+        marginLeft: '5%', 
+        marginRight: '5%',
+        elevation: 2
+    },
     rectangle: {
         width: imageWidth/5.88, 
         height: imageHeight/3.345, 

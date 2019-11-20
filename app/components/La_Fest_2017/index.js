@@ -26,23 +26,24 @@ export default class La2017 extends React.Component {
           locations={[0.15, 1]}
           colors={['#505050', '#101010']} 
           style={styles.linearGradient}>
-          <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
+          <View style={{flex: 3, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
             <Text style={{color: 'white', fontSize: 25, fontFamily: 'Montserrat-Bold'}}>2017</Text>
           </View>
-          <View style={{flex: 3.5, flexDirection: 'row', alignSelf: 'center', position: 'relative'}}>
+          <View style={{flex: 8, flexDirection: 'row', alignSelf: 'center', position: 'relative'}}>
             <Icon name="La_2017" size={240} color="#000000"/>
           </View> 
-          <View style={{flex: 1, alignSelf: 'center'}}>
+          <View style={{flex: 2.5, alignSelf: 'center'}}>
             <Text style={{fontSize: 15, color: '#909090', fontFamily: 'Montserrat-Bold'}}>The Show Must Go On</Text>
           </View>
           <View style={{flex: 2, flexDirection: 'row'}}>
-            <View style={{flex: 1}}>
-              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold', marginTop: '2%'}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=XGeMK-bwcbQ&t=607s')}}>Promo</Text>
-            </View>
-            <View style={{flex: 1}}>
-              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold', marginTop: '2%'}} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=6enhjG3YOmk')}}>Tribute</Text>
-            </View>
+            <TouchableOpacity style={styles.link} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=XGeMK-bwcbQ&t=607s')}}>
+              <Text style={{fontSize: 15, textAlign: 'center', color: '#FFFFFF', fontFamily: 'Montserrat-Bold'}}>Promo</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.link} onPress={() => {Linking.openURL('https://www.youtube.com/watch?v=6enhjG3YOmk')}}>
+              <Text style={{fontSize: 15, textAlign: 'center', color: '#D0D0D0', fontFamily: 'Montserrat-Bold'}}>Tribute</Text>
+            </TouchableOpacity>
           </View>
+          <View style={{flex: 3}}/>
         </LinearGradient>
       </View>
     );
