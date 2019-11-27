@@ -8,6 +8,9 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 // import { createDrawerNavigator } from 'react-navigation-drawer';
 import Home from './app/components/Home';
 import Logo2013 from './app/components/La_Fest_2013';
+import Logo2014 from './app/components/La_Fest_2014';
+import Logo2015 from './app/components/La_Fest_2015';
+import Logo2016 from './app/components/La_Fest_2016';
 import Logo2017 from './app/components/La_Fest_2017';
 
 const HomeStack = createStackNavigator(
@@ -19,6 +22,24 @@ const HomeStack = createStackNavigator(
 const Logo2013Stack = createStackNavigator(
   {
     Logo2013: Logo2013,
+  }
+);
+
+const Logo2014Stack = createStackNavigator(
+  {
+    Logo2014: Logo2014,
+  }
+);
+
+const Logo2015Stack = createStackNavigator(
+  {
+    Logo2015: Logo2015,
+  }
+);
+
+const Logo2016Stack = createStackNavigator(
+  {
+    Logo2016: Logo2016,
   }
 );
 
@@ -65,9 +86,11 @@ UserTabNavigator.navigationOptions = ({ navigation }) => {
 const UserAppNavigator = createStackNavigator({
   Home: Home,
   La_13: Logo2013,
+  La_14: Logo2014,
+  La_15: Logo2015,
+  La_16: Logo2016,
   La_17: Logo2017,
-}
-)
+})
 
 export default createAppContainer(createSwitchNavigator(
   {

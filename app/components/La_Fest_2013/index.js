@@ -22,9 +22,9 @@ export default class La2013 extends React.Component {
     return(
       <View style={styles.parent}>
         <LinearGradient 
-          start={{x: 0, y: 0}} end={{x: 0, y: 1}}
+          start={{x: 0, y: 0}} end={{x: 0, y: 0.65}}
           locations={[0.1, 0.9]}
-          colors={['#101040', '#101010']} 
+          colors={['#103090', '#101010']} 
           style={styles.linearGradient}>
           <View style={{flex: 3, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
             <Text style={{color: 'white', fontSize: 25, fontFamily: 'Montserrat-Bold'}}>2013</Text>

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Las';
+  src:  url('fonts/Las.eot?74p250');
+  src:  url('fonts/Las.eot?74p250#iefix') format('embedded-opentype'),
+    url('fonts/Las.ttf?74p250') format('truetype'),
+    url('fonts/Las.woff?74p250') format('woff'),
+    url('fonts/Las.svg?74p250#Las') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="las-"], [class*=" las-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Las' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.las-La_2014_SVG .path1:before {
+  content: "\e900";
+  color: rgb(149, 16, 19);
+}
+.las-La_2014_SVG .path2:before {
+  content: "\e901";
+  margin-left: -0.70703125em;
+  color: rgb(149, 16, 19);
+}
+.las-La_2014_SVG .path3:before {
+  content: "\e902";
+  margin-left: -0.70703125em;
+  color: rgb(0, 0, 0);
+}
+.las-La_2014_SVG .path4:before {
+  content: "\e903";
+  margin-left: -0.70703125em;
+  color: rgb(0, 0, 0);
+}
+.las-La_2014_SVG .path5:before {
+  content: "\e904";
+  margin-left: -0.70703125em;
+  color: rgb(0, 0, 0);
+}
+.las-La_2014_SVG .path6:before {
+  content: "\e905";
+  margin-left: -0.70703125em;
+  color: rgb(149, 16, 19);
+}
+.las-La_2014_SVG .path7:before {
+  content: "\e906";
+  margin-left: -0.70703125em;
+  color: rgb(255, 255, 255);
+}
+.las-La_2014_SVG .path8:before {
+  content: "\e907";
+  margin-left: -0.70703125em;
+  color: rgb(255, 255, 255);
+}
+.las-La_2014_SVG .path9:before {
+  content: "\e908";
+  margin-left: -0.70703125em;
+  color: rgb(255, 255, 255);
+}
+.las-La_2014_SVG .path10:before {
+  content: "\e909";
+  margin-left: -0.70703125em;
+  color: rgb(255, 255, 255);
+}
+.las-La_2014_SVG .path11:before {
+  content: "\e90a";
+  margin-left: -0.70703125em;
+  color: rgb(255, 255, 255);
+}
+.las-La_2015_SVG:before {
+  content: "\e90b";
+  color: #40a9bf;
+}
+.las-La_2016_SVG .path1:before {
+  content: "\e90c";
+  color: rgb(48, 48, 48);
+}
+.las-La_2016_SVG .path2:before {
+  content: "\e90d";
+  margin-left: -0.70703125em;
+  color: rgb(48, 48, 48);
+}
+.las-La_2016_SVG .path3:before {
+  content: "\e90e";
+  margin-left: -0.70703125em;
+  color: rgb(48, 48, 48);
+}
+.las-La_2016_SVG .path4:before {
+  content: "\e90f";
+  margin-left: -0.70703125em;
+  color: rgb(0, 0, 0);
+  opacity: 0.75;
+}
+.las-La_2016_SVG .path5:before {
+  content: "\e910";
+  margin-left: -0.70703125em;
+  color: rgb(48, 48, 48);
+}
+.las-La_2016_SVG .path6:before {
+  content: "\e911";
+  margin-left: -0.70703125em;
+  color: rgb(48, 48, 48);
+}

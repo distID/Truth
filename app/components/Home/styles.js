@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native';
 const dimensions = Dimensions.get('window');
 const imageHeight = dimensions.height/4.25;    //imageHeight = 684.7
 const imageWidth = dimensions.width/2.53125;    //imageWidth = 411.6
@@ -12,14 +12,17 @@ export default StyleSheet.create({
         flex: 1,
       },
     logoView: {
-        flex: 8.5, 
+        height: '100%',
+    },
+    logoContainer: {
+    	flex: 5,
         alignSelf: 'center',
-        width: imageHeight,
-        height: imageHeight,
     },
     logo: {
+    	flex: 1, 
         height: imageHeight,
         width: imageWidth,
+        alignSelf: 'center',
     },
     year: {
         flex: 1,
@@ -27,12 +30,15 @@ export default StyleSheet.create({
         color: '#F0F0F0',
         fontFamily: 'Montserrat-Bold',
         fontSize: 15,
+        marginTop: '3%'
     },
     tagline: {
         flex: 1,
         alignSelf: 'center',
+        textAlign: 'center',
         color: '#B0B0B0',
-        marginBottom: '-24%',
-        fontSize: 14,
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 13,
+        marginTop: '-3%'
     }
 })

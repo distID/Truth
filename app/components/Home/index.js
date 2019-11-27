@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, Image, FlatList, KeyboardAvoidingView} from 'react-native';
+import {View, Text, TouchableOpacity, Image, FlatList, ScrollView, KeyboardAvoidingView} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Icon2 from 'react-native-vector-icons/MaterialIcons';
 import Icon3 from 'react-native-vector-icons/FontAwesome';
@@ -11,8 +11,8 @@ export default class Home extends React.Component {
   constructor() {
     super()
     this.state = {
-      data : [{year: '2013', tagline: 'Our Plot. Your Story.', navigate: 'La_13', color: '#97FFFF', image: '2013.jpg'}, 
-              {year: '2017', tagline: 'The Show Must Go On.', navigate: 'La_17', color: '#FFFFFF', image: '2017.png'}]
+      data : [{year: '2013', tagline: 'Our Plot. Your Story.', navigate: 'La_13', color: '#97FFFF', image: '2013.jpg'},
+              {year: '2017', tagline: 'The Show Must Go On.', navigate: 'La_17', color: '#FFFFFF', image: '2017.png'},]
     }
   }
   static navigationOptions={
@@ -26,23 +26,62 @@ export default class Home extends React.Component {
           locations={[0.1, 0.6]}
           colors={['#101060', '#101010']}
           style={styles.linearGradient}>
-          <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '5%', marginBottom: '3%'}}>
+          <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '4%', marginBottom: '3%'}}>
             <Text style={{color: 'white', fontSize: 30, fontFamily: 'Montserrat-Bold'}}>La Fest</Text>
           </View>
-          <View style={{flex: 2, flexDirection: 'row', marginTop: '-60%'}}>
-            <TouchableOpacity style= {styles.logoView} onPress={() => {this.props.navigation.navigate('La_13')}}>
-              <View style={styles.logoView}>
-                <Image
-                  style={styles.logo}
-                  source={require('../assets/2013.jpg')}
-                  resizeMode="contain"
-                ></Image>
-              </View>
-              <Text style={styles.year}>La Fest 2013</Text>
-              <Text style={styles.tagline}>Our Plot. Your Story</Text>
-            </TouchableOpacity>
+          <View style={{flex: 2.3, marginLeft: '4%'}}>
+          	<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          		<View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between', height: '100%', width: 740}}>
+		            <TouchableOpacity style= {styles.logoView} onPress={() => {this.props.navigation.navigate('La_13')}}>
+		              <View style={styles.logoContainer}>
+		                <Image
+		                  style={styles.logo}
+		                  source={require('../assets/2013.jpg')}
+		                  resizeMode="contain"
+		                ></Image>
+		              </View>
+		              <Text style={styles.year}>La Fest 2013</Text>
+		              <Text style={styles.tagline}>Our Plot.{"\n"}Your Story</Text>
+		            </TouchableOpacity>
+		            <TouchableOpacity style={styles.logoView} onPress={() => {this.props.navigation.navigate('La_14')}}>
+		              <View style={styles.logoContainer}>
+		                <Image
+		                  style={styles.logo}
+		                  source={require('../assets/2014.jpeg')}
+		                  resizeMode="contain"
+		                ></Image>
+		              </View>
+		              <Text style={styles.year}>La Fest 2014</Text>
+		              <Text style={styles.tagline}>A Million Stars{"\n"}One Supernova</Text>
+		            </TouchableOpacity>
+		            <TouchableOpacity style= {styles.logoView} onPress={() => {this.props.navigation.navigate('La_15')}}>
+		              <View style={styles.logoContainer}>
+		                <Image
+		                  style={styles.logo}
+		                  source={require('../assets/2015.jpg')}
+		                  resizeMode="contain"
+		                ></Image>
+		              </View>
+		              <Text style={styles.year}>La Fest 2015</Text>
+		              <Text style={styles.tagline}>Behold the 20th{"\n"}Dimension of Elysium</Text>
+		            </TouchableOpacity>
+		            <TouchableOpacity style={styles.logoView, {marginRight: '3%'}} onPress={() => {this.props.navigation.navigate('La_16')}}>
+		              <View style={styles.logoContainer}>
+		                <Image
+		                  style={styles.logo}
+		                  source={require('../assets/2016.jpg')}
+		                  resizeMode="contain"
+		                ></Image>
+		              </View>
+		              <Text style={styles.year}>La Fest 2016</Text>
+		              <Text style={styles.tagline}>2 Decades of Legacy{"\n"}1 Day for Legends</Text>
+		            </TouchableOpacity>
+		          </View>
+		        </ScrollView>
+		      </View>
+        	<View style={{flex: 2.4, flexDirection: 'row', marginTop: '8%', alignSelf: 'center'}}>
             <TouchableOpacity style={styles.logoView} onPress={() => {this.props.navigation.navigate('La_17')}}>
-              <View style={styles.logoView}>
+              <View style={styles.logoContainer}>
                 <Image
                   style={styles.logo}
                   source={require('../assets/2017.png')}
@@ -53,7 +92,7 @@ export default class Home extends React.Component {
               <Text style={styles.tagline}>The Show Must Go On</Text>
             </TouchableOpacity>
           </View>
-          <View style={{flex: 1}}/> 
+          <View style={{flex: 0.5}}/>
         </LinearGradient> 
       </View>
     );
