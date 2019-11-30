@@ -11,8 +11,7 @@ export default class Home extends React.Component {
   constructor() {
     super()
     this.state = {
-      data : [{year: '2013', tagline: 'Our Plot. Your Story.', navigate: 'La_13', color: '#97FFFF', image: '2013.jpg'},
-              {year: '2017', tagline: 'The Show Must Go On.', navigate: 'La_17', color: '#FFFFFF', image: '2017.png'},]
+
     }
   }
   static navigationOptions={
@@ -22,13 +21,18 @@ export default class Home extends React.Component {
     return(
       <View style={styles.parent}>
         <LinearGradient 
-          start={{x: 1, y: 0}} end={{x: 0.65, y: 0.35}}
-          locations={[0.1, 0.6]}
-          colors={['#101060', '#101010']}
-          style={styles.linearGradient}>
-          <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '4%', marginBottom: '3%'}}>
-            <Text style={{color: 'white', fontSize: 30, fontFamily: 'Montserrat-Bold'}}>La Fest</Text>
-          </View>
+            start={{x: 1, y: 0}} end={{x: 0.65, y: 0.35}}
+            locations={[0.1, 0.6]}
+            colors={['#103090', '#101010']}
+            style={styles.linearGradient}>
+            <View style={{flex: 1, flexDirection: 'row'}}>
+        	    <View style={{flex: 1, marginLeft: '5%', marginTop: '4%', marginRight: '4%', marginBottom: '3%'}}>
+            	    <Text style={{color: 'white', fontSize: 30, fontFamily: 'Montserrat-Bold'}}>La Fest</Text>
+            	</View>
+            <TouchableOpacity style={{marginRight: '3%', marginTop: '4%'}} onPress={() => {this.props.navigation.navigate('Info')}}>
+            	<Icon3 name="buysellads" size={40}/>
+            </TouchableOpacity>
+           </View>
           <View style={{flex: 2.3, marginLeft: '4%'}}>
           	<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           		<View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between', height: '100%', width: 740}}>

@@ -12,6 +12,7 @@ import Logo2014 from './app/components/La_Fest_2014';
 import Logo2015 from './app/components/La_Fest_2015';
 import Logo2016 from './app/components/La_Fest_2016';
 import Logo2017 from './app/components/La_Fest_2017';
+import Info from './app/components/Info';
 
 const HomeStack = createStackNavigator(
   {
@@ -46,6 +47,12 @@ const Logo2016Stack = createStackNavigator(
 const Logo2017Stack = createStackNavigator(
   {
     Logo2017: Logo2017,
+  }
+);
+
+const InfoStack = createStackNavigator(
+  {
+    Info: Info,
   }
 );
 
@@ -90,6 +97,7 @@ const UserAppNavigator = createStackNavigator({
   La_15: Logo2015,
   La_16: Logo2016,
   La_17: Logo2017,
+  Info: Info,
 })
 
 export default createAppContainer(createSwitchNavigator(

@@ -30,15 +30,14 @@ export default StyleSheet.create({
         color: '#F0F0F0',
         fontFamily: 'Montserrat-Bold',
         fontSize: 15,
-        marginTop: '3%'
     },
     tagline: {
         flex: 1,
         alignSelf: 'center',
         textAlign: 'center',
         color: '#B0B0B0',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Montserrat-Regular',
         fontSize: 13,
-        marginTop: '-3%'
+        marginTop: '-6%'
     }
 })
